@@ -116,8 +116,29 @@
 }
 
 .second__section {
-  height: 100dvh;
+  min-height: 100dvh;
   background-color: #000000;
+  position: relative;
+  z-index: 1;
+  &__title {
+    font-family: AveriaSerifLibre, sans-serif;
+    font-size: 96px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 50px;
+  }
+  &__text {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 2;
+    text-align: center;
+    color: #fff;
+    margin-top: 88px;
+    text-transform: initial;
+  }
 }
 
 .page__header {

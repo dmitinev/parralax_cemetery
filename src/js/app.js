@@ -11,10 +11,12 @@ window.addEventListener('scroll', function () {
 
 const burgerMenu = document.querySelector('.page__header__burger');
 const navMenu = document.querySelector('.page__header__menus');
+const body = document.querySelector('.page__body');
 
 burgerMenu.addEventListener('click', burgerHandler);
 
 function burgerHandler() {
   burgerMenu.classList.toggle('page__header__burger--active');
   navMenu.classList.toggle('page__header__menus--active');
+  body.classList.toggle('page__body--active');
 }
